@@ -106,7 +106,7 @@
 <p>A expectativa de vida da população brasileira chegou a 76,6 anos em 2024, apresentando crescimento em relação aos anos anteriores após a recuperação dos impactos causados pela pandemia da Covid-19 (BRASIL, 2025).</p>
 </div>
 <div class="image-placeholder">
-<img src="grafico1.png" alt="Gráfico 1 – Expectativa de Vida no Brasil" onerror="this.style.display='none';">
+<img src="image (4).png" alt="Gráfico 1 – Expectativa de Vida no Brasil" onerror="this.style.display='none';">
 <span class="placeholder-text">Gráfico 1 – Expectativa de Vida no Brasil</span>
 </div>
 </div>
@@ -117,7 +117,7 @@
 <p>A taxa de mortalidade infantil no Brasil foi de 12,3 mortes para cada mil nascidos vivos em 2024. O indicador apresentou significativa redução ao longo das décadas, já que em 1940 cerca de 146,6 crianças morriam antes de completar um ano de idade para cada mil nascimentos. Essa melhora está relacionada às campanhas de vacinação, ampliação do pré-natal, incentivo ao aleitamento materno, melhorias no saneamento básico e aumento das condições de vida da população (BRASIL, 2025).</p>
 </div>
 <div class="image-placeholder">
-<img src="grafico2.png" alt="Gráfico 2 – Mortalidade Infantil no Brasil" onerror="this.style.display='none';">
+<img src="image (5).png" alt="Gráfico 2 – Mortalidade Infantil no Brasil" onerror="this.style.display='none';">
 <span class="placeholder-text">Gráfico 2 – Mortalidade Infantil no Brasil</span>
 </div>
 </div>
@@ -128,7 +128,7 @@
 <p>O Brasil possui aproximadamente 2,5 médicos para cada mil habitantes. Apesar do crescimento no número de profissionais nos últimos anos, ainda existe desigualdade na distribuição médica entre as regiões do país, com maior concentração de médicos nos grandes centros urbanos e escassez em áreas mais afastadas e vulneráveis (DEMOGRAFIA MÉDICA, 2025).</p>
 </div>
 <div class="image-placeholder">
-<img src="grafico3.png" alt="Gráfico 3 – Distribuição de Médicos por Região" onerror="this.style.display='none';">
+<img src="image (6).png" alt="Gráfico 3 – Distribuição de Médicos por Região" onerror="this.style.display='none';">
 <span class="placeholder-text">Gráfico 3 – Distribuição de Médicos por Região</span>
 </div>
 </div>
@@ -139,7 +139,7 @@
 <p>O Brasil investe cerca de 9% do Produto Interno Burto (PIB) em saúde, considerando os gastos públicos e privados. Apesar da importância do SUS como sistema universal, especialistas apontam que o financiamento da saúde pública ainda enfrenta desafios para garantir atendimento adequado à população (SBPC, 2025).</p>
 </div>
 <div class="image-placeholder">
-<img src="grafico4.png" alt="Gráfico 4 – Investimento em Saúde no PIB" onerror="this.style.display='none';">
+<img src="image (7).png" alt="Gráfico 4 – Investimento em Saúde no PIB" onerror="this.style.display='none';">
 <span class="placeholder-text">Gráfico 4 – Investimento em Saúde no PIB</span>
 </div>
 </div>
