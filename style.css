@@ -48,7 +48,7 @@ text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
 
 hero .subtitle {
 font-size: 1.2rem;
-color: #ffdf00 !important; /* 🌟 O !important força a mudança da cor */
+color: #ffffff; !important; /* 🌟 O !important força a mudança da cor */
 opacity: 1 !important;
 max-width: 800px;
 margin: 0 auto 30px auto;
