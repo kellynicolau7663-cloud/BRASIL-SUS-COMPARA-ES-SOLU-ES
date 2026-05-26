@@ -12,7 +12,7 @@
 <div class="container">
 <span class="badge">Projeto Interdisciplinar - Curso Técnico</span>
 <h1>Comparação dos Sistemas de Saúde</h1>
-<p class="subtitle">Brasil, Países Desenvolvidos e Países em Desenvolvimento: Uma Análise Crítica Global</p>
+<p class="subtitle" style="color: #ffdf00 !important; opacity: 1 !important;">Brasil, Países Desenvolvidos e Países em Desenvolvimento: Uma Análise Crítica Global</p>
 
 <div class="team-box">
 <h3>Componentes do Grupo:</h3>
