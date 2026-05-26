@@ -7,8 +7,8 @@ box-sizing: border-box;
 
 body {
 font-family: 'Inter', sans-serif;
-background-color: #f4f7f6;
-color: #2c3e50;
+background-color: #f4f7f5; /* Fundo cinza bem claro com um toque sutil de verde */
+color: #1c2d24; /* Texto principal em um verde-escuro quase preto */
 line-height: 1.6;
 }
 
@@ -18,22 +18,22 @@ max-width: 1100px;
 margin: 0 auto;
 }
 
-/* Estilização do Cabeçalho (Hero) */
+/* Estilização do Cabeçalho (Hero) - Verde e Amarelo da Bandeira */
 .hero {
-background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+background: linear-gradient(135deg, #00471b 0%, #006324 100%); /* Degradê Verde Imperial */
 color: white;
 padding: 60px 0;
 text-align: center;
-border-bottom: 5px solid #00b4d8;
+border-bottom: 5px solid #ffdf00; /* Linha inferior em Amarelo Ouro */
 }
 
 .badge {
-background-color: #00b4d8;
-color: white;
+background-color: #ffdf00; /* Amarelo Ouro */
+color: #00471b; /* Texto Verde Escuro para dar contraste e leitura */
 padding: 6px 12px;
 border-radius: 20px;
 font-size: 0.85rem;
-font-weight: 600;
+font-weight: 700;
 text-transform: uppercase;
 display: inline-block;
 margin-bottom: 15px;
@@ -43,23 +43,25 @@ margin-bottom: 15px;
 font-size: 2.8rem;
 margin-bottom: 10px;
 font-weight: 700;
+text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
 }
 
 .hero .subtitle {
 font-size: 1.2rem;
-opacity: 0.9;
+opacity: 0.95;
 max-width: 800px;
 margin: 0 auto 30px auto;
 }
 
 /* Painel dos Integrantes */
 .team-box {
-background: rgba(255, 255, 255, 0.1);
+background: rgba(255, 255, 255, 0.12);
 padding: 20px;
 border-radius: 8px;
 max-width: 700px;
 margin: 0 auto;
 backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .team-box h3 {
@@ -67,6 +69,7 @@ font-size: 1rem;
 margin-bottom: 10px;
 text-transform: uppercase;
 letter-spacing: 1px;
+color: #ffdf00; /* Destaque em Amarelo */
 }
 
 .team-list {
@@ -83,16 +86,18 @@ padding: 6px 14px;
 border-radius: 4px;
 font-size: 0.95rem;
 font-weight: 600;
+color: white;
 }
 
-/* Menu de Navegação Fixo */
+/* Menu de Navegação Fixo - Tons de Azul e Verde */
 .navbar {
 background-color: #ffffff;
-box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+box-shadow: 0 4px 6px rgba(0,0,0,0.04);
 position: sticky;
 top: 0;
 z-index: 1000;
 padding: 15px 0;
+border-bottom: 1px solid #e2e8f0;
 }
 
 .navbar .container {
@@ -103,15 +108,15 @@ flex-wrap: wrap;
 }
 
 .navbar a {
-color: #4a5568;
+color: #334155;
 text-decoration: none;
 font-weight: 600;
 font-size: 0.9rem;
-transition: color 0.3s ease;
+transition: all 0.3s ease;
 }
 
 .navbar a:hover {
-color: #0077b6;
+color: #002f6c; /* Transição para o Azul da bandeira ao passar o mouse */
 }
 
 /* Estilo das Seções e Cards de Conteúdo */
@@ -123,34 +128,34 @@ padding: 40px 0;
 background: white;
 padding: 35px;
 border-radius: 12px;
-box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+box-shadow: 0 4px 15px rgba(0,0,0,0.02);
 margin-bottom: 30px;
 }
 
 h2 {
-color: #1e3c72;
+color: #00471b; /* Títulos principais em Verde */
 font-size: 1.8rem;
 margin-bottom: 20px;
-border-left: 5px solid #00b4d8;
+border-left: 5px solid #ffdf00; /* Detalhe lateral em Amarelo */
 padding-left: 15px;
 }
 
 h3 {
-color: #2c5298;
+color: #002f6c; /* Subtítulos em Azul Marinho */
 font-size: 1.4rem;
 margin-bottom: 15px;
 }
 
 p {
 margin-bottom: 15px;
-color: #4a5568;
+color: #334155;
 text-align: justify;
 }
 
 ul {
 margin-left: 20px;
 margin-bottom: 20px;
-color: #4a5568;
+color: #334155;
 }
 
 li {
@@ -159,20 +164,22 @@ margin-bottom: 10px;
 
 /* Destaques de Texto */
 .highlight-text {
-background-color: #e3f2fd;
+background-color: #e8f5e9; /* Fundo Verde muito suave */
 padding: 15px;
 border-radius: 8px;
-border-left: 4px solid #1e88e5;
+border-left: 4px solid #006324;
 font-weight: 500;
+color: #1b5e20;
 }
 
 .quote-text {
 font-style: italic;
-background-color: #f1f8e9;
+background-color: #e1f5fe; /* Fundo Azul bem suave */
 padding: 15px;
 border-radius: 8px;
-border-left: 4px solid #7cb342;
+border-left: 4px solid #0288d1;
 margin-top: 20px;
+color: #01579b;
 }
 
 /* Grid de Princípios do SUS */
@@ -187,12 +194,12 @@ margin: 25px 0;
 background-color: #f8fafc;
 padding: 20px;
 border-radius: 8px;
-border-top: 4px solid #00b4d8;
-box-shadow: 0 2px 5px rgba(0,0,0,0.02);
+border-top: 4px solid #006324; /* Topo verde nos blocos */
+box-shadow: 0 2px 5px rgba(0,0,0,0.01);
 }
 
 .principle-item h4 {
-color: #0077b6;
+color: #00471b;
 margin-bottom: 10px;
 }
 
@@ -221,21 +228,21 @@ font-size: 1.15rem;
 }
 
 .public {
-background-color: #e0f2f1;
-border: 1px solid #b2dfdb;
+background-color: #e8f5e9; /* Público - Verde Suave */
+border: 1px solid #c8e6c9;
 }
 
 .public h4 {
-color: #00695c;
+color: #1b5e20;
 }
 
 .private {
-background-color: #fff3e0;
-border: 1px solid #ffe0b2;
+background-color: #e1f5fe; /* Privado - Azul Suave */
+border: 1px solid #b3e5fc;
 }
 
 .private h4 {
-color: #e65100;
+color: #01579b;
 }
 
 /* Blocos de Indicadores com Imagens/Gráficos */
@@ -253,7 +260,7 @@ display: inline-block;
 .section-title hr {
 width: 60px;
 height: 4px;
-background-color: #00b4d8;
+background-color: #ffdf00; /* Linha amarela sob o título central */
 border: none;
 margin: 10px auto 0 auto;
 }
@@ -280,7 +287,7 @@ flex: 1;
 }
 
 .indicator-info h4 {
-color: #1e3c72;
+color: #002f6c; /* Azul nos títulos dos indicadores */
 margin-bottom: 10px;
 }
 
@@ -288,64 +295,12 @@ margin-bottom: 10px;
 .image-placeholder {
 width: 320px;
 height: 200px;
-background-color: #edf2f7;
-border: 2px dashed #cbd5e1;
-border-radius: 8px;
-display: flex;
-align-items: center;
-justify-content: center;
-position: relative;
-overflow: hidden;
-}
-
-@media(max-width: 768px) {
-.image-placeholder {
-width: 100%;
-}
-}
-
-.image-placeholder img {
-width: 100%;
-height: 100%;
-object-fit: cover;
-position: absolute;
-top: 0;
-left: 0;
-z-index: 2;
-}
-
-.placeholder-text {
-color: #64748b;
-font-size: 0.85rem;
-text-align: center;
-padding: 10px;
-z-index: 1;
-font-weight: 500;
-}
-
-/* Seção de Referências */
-.references-section ul {
-list-style-type: none;
-margin-left: 0;
-}
-
-.references-section li {
-padding-bottom: 15px;
-border-bottom: 1px solid #edf2f7;
-font-size: 0.9rem;
-text-align: left;
-}
-
-.references-section li:last-child {
-border-bottom: none;
-}
-
-/* Rodapé */
-footer {
-background-color: #1a202c;
-color: #a0aec0;
+background-color: #f1f5f9;
+background-color: #0c1a13; /* Verde ultra-escuro para fechar o layout */
+color: #a7bdae;
 text-align: center;
 padding: 25px 0;
 margin-top: 40px;
 font-size: 0.9rem;
+border-top: 3px solid #ffdf00;
 }
