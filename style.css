@@ -1,0 +1,75 @@
+/* Definição de Cores e Variáveis */
+:root {
+    --verde: #009c3b;
+    --amarelo: #ffdf00;
+    --azul: #002776;
+    --fundo: #fdfdfd;
+}
+
+/* Configurações Gerais */
+body { 
+    font-family: 'Segoe UI', Tahoma, sans-serif; 
+    margin: 0; 
+    background: var(--fundo); 
+    color: #333; 
+    line-height: 1.6; 
+}
+
+/* Estilização das Imagens (Conforme sua solicitação de JPG) */
+.img-topo { width: 140px; margin-bottom: 10px; }
+.img-rodape { width: 90px; margin-top: 15px; border-radius: 4px; background: white; padding: 5px; }
+
+/* Cabeçalho e Navegação */
+header { 
+    background: var(--verde); 
+    color: white; 
+    text-align: center; 
+    padding: 2.5rem 1rem; 
+    border-bottom: 7px solid var(--amarelo); 
+}
+
+nav { 
+    background: var(--azul); 
+    padding: 12px; 
+    text-align: center; 
+    position: sticky; 
+    top: 0; 
+    z-index: 100; 
+}
+
+nav a { 
+    color: white; 
+    text-decoration: none; 
+    margin: 0 15px; 
+    font-weight: bold; 
+}
+
+nav a:hover { color: var(--amarelo); }
+
+/* Conteúdo Principal e Layout */
+main { 
+    max-width: 900px; 
+    margin: 25px auto; 
+    padding: 25px; 
+    background: white; 
+    border-radius: 10px; 
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05); 
+}
+
+.grid-beneficios { display: flex; gap: 15px; margin: 20px 0; }
+.card-b { flex: 1; padding: 15px; border-left: 5px solid var(--verde); background: #f0f9f4; border-radius: 4px; }
+
+.highlight { background: #f8f9fa; padding: 25px; border-radius: 8px; margin: 35px 0; }
+.grid-graficos { display: grid; grid-template-columns: 1fr 1fr; gap: 25px; }
+
+/* Alertas para Dificuldades */
+.box-alerta { background: #fff5f5; border-left: 6px solid #e53e3e; padding: 15px; margin-top: 10px; }
+
+/* Rodapé */
+footer { 
+    background: var(--azul); 
+    color: white; 
+    text-align: center; 
+    padding: 2rem; 
+    margin-top: 50px; 
+}
