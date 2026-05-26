@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Análise SUS - Brasil no Cenário Global</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Biblioteca de Gráficos -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<header>
+    <h1>O Sistema Único de Saúde (SUS)</h1>
+    <p>Uma Análise Crítica e Comparativa Internacional</p>
+</header>
+
+<nav>
+    <a href="#inicio">Início</a>
+    <a href="#indicadores">Indicadores</a>
+    <a href="#sucessos">Sucessos do Brasil</a>
+    <a href="#analise">Análise Crítica</a>
+</nav>
+
+<main>
+    <section id="inicio">
+        <h2>Princípios Constitucionais</h2>
+        <p>O Brasil é referência por seu modelo baseado em três pilares fundamentais :</p>
+        <div class="principios">
+            <div class="card-p"><strong>Universalidade:</strong> Saúde como direito de todos.</div>
+            <div class="card-p"><strong>Integralidade:</strong> Cuidado completo em todos os níveis.</div>
+            <div class="card-p"><strong>Equidade:</strong> Justiça social no atendimento.</div>
+        </div>
+    </section>
+
+    <section id="indicadores" class="highlight">
+        <h2>Comparação de Indicadores Globais</h2>
+        <p>Dados que comprovam que investimento alto nem sempre garante os melhores resultados .</p>
+        <div class="grid-graficos">
+            <div class="chart-container">
+                <h3>Médicos por 1.000 Hab.</h3>
+                <canvas id="chartMedicos"></canvas>
+            </div>
+            <div class="chart-container">
+                <h3>Mortalidade Infantil (por 1k)</h3>
+                <canvas id="chartMortalidade"></canvas>
+            </div>
+        </div>
+    </section>
+
+    <section id="sucessos">
+        <h2>O que o Brasil Ensina ao Mundo</h2>
+        <p>O SUS possui conquistas que servem de modelo internacional :</p>
+        <ul>
+            <li><strong>PNI:</strong> Referência global em logística e cobertura vacinal .</li>
+            <li><strong>HIV/AIDS:</strong> Pioneirismo no acesso universal gratuito a antirretrovirais .</li>
+            <li><strong>Saúde da Família:</strong> O maior programa de atenção primária do mundo .</li>
+            <li><strong>Transplantes:</strong> Um dos sistemas mais organizados e volumosos do planeta .</li>
+        </ul>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2024 Projeto Interdisciplinar - Saúde Global</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
