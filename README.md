@@ -21,7 +21,7 @@
 <li>Daniele da Silva</li>
 <li>Deivid Lima</li>
 <li>Flavia Fonseca</li>
-<li>Jamile</li>
+<li>Jamile Santos</li>
 <li>Kelly Cristina</li>
 </ul>
 </div>
