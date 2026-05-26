@@ -46,9 +46,10 @@ font-weight: 700;
 text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
 }
 
-.hero .subtitle {
+hero .subtitle {
 font-size: 1.2rem;
-opacity: 0.95;
+color: #ffdf00; /* 🌟 Esta linha define a cor do texto para Amarelo Ouro */
+opacity: 1; /* Mantém a cor 100% forte e visível */
 max-width: 800px;
 margin: 0 auto 30px auto;
 }
