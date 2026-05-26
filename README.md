@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
@@ -11,7 +10,7 @@
 <body>
 
 <header>
-    <img src="bandeira-brasil.jpg" alt="Bandeira do Brasil" class="img-topo">
+    <img src="BANDEIRA DO BRASIL.jpeg" alt="Bandeira do Brasil" class="img-topo">
     <h1>O SUS no Brasil Atual</h1>
     <p>Benefícios, Desafios e Caminhos para o Futuro</p>
 </header>
@@ -27,19 +26,19 @@
     <!-- Seção de Benefícios e Princípios -->
     <section id="beneficios">
         <h2>Benefícios e Princípios do SUS</h2>
-        <p>O sistema brasileiro é fundamentado em três pilares constitucionais que garantem a saúde como direito de todos [1]:</p>
+        <p>O sistema brasileiro é fundamentado em três pilares constitucionais que garantem a saúde como direito de todos :</p>
         <div class="grid-beneficios">
-            <div class="card-b"><strong>Universalidade:</strong> Acesso garantido a toda a população [1].</div>
-            <div class="card-b"><strong>Integralidade:</strong> Cuidado completo, da prevenção à alta complexidade [1].</div>
-            <div class="card-b"><strong>Equidade:</strong> Oferecer mais a quem mais precisa para reduzir desigualdades [1].</div>
+            <div class="card-b"><strong>Universalidade:</strong> Acesso garantido a toda a população .</div>
+            <div class="card-b"><strong>Integralidade:</strong> Cuidado completo, da prevenção à alta complexidade .</div>
+            <div class="card-b"><strong>Equidade:</strong> Oferecer mais a quem mais precisa para reduzir desigualdades .</div>
         </div>
-        <p><strong>Sucessos Reais:</strong> O Brasil é referência no PNI (vacinação), na política de HIV/AIDS, na Estratégia Saúde da Família (ESF) e no sistema de transplantes [2-4].</p>
+        <p><strong>Sucessos Reais:</strong> O Brasil é referência no PNI (vacinação), na política de HIV/AIDS, na Estratégia Saúde da Família (ESF) e no sistema de transplantes .</p>
     </section>
 
     <!-- Seção de Gráficos -->
     <section id="indicadores" class="highlight">
         <h2>Análise Comparativa de Indicadores</h2>
-        <p>Dados mostram que o modelo de gestão importa tanto quanto o recurso financeiro [5, 6].</p>
+        <p>Dados mostram que o modelo de gestão importa tanto quanto o recurso financeiro .</p>
         <div class="grid-graficos">
             <div class="chart-container">
                 <h3>Médicos por 1.000 Hab.</h3>
@@ -57,10 +56,10 @@
         <h2>Dificuldades Enfrentadas Hoje</h2>
         <div class="box-alerta">
             <ul>
-                <li><strong>Financiamento Insuficiente:</strong> Recursos que nem sempre acompanham a demanda crescente [1].</li>
-                <li><strong>Desigualdades Regionais:</strong> Disparidades brutais no acesso entre as regiões do país [1, 7].</li>
-                <li><strong>Má Distribuição de Profissionais:</strong> Concentração de médicos em grandes centros, deixando áreas remotas desassistidas [6].</li>
-                <li><strong>Filas de Espera:</strong> Gargalos no atendimento especializado e cirurgias eletivas [8].</li>
+                <li><strong>Financiamento Insuficiente:</strong> Recursos que nem sempre acompanham a demanda crescente .</li>
+                <li><strong>Desigualdades Regionais:</strong> Disparidades brutais no acesso entre as regiões do país .</li>
+                <li><strong>Má Distribuição de Profissionais:</strong> Concentração de médicos em grandes centros, deixando áreas remotas desassistidas .</li>
+                <li><strong>Filas de Espera:</strong> Gargalos no atendimento especializado e cirurgias eletivas .</li>
             </ul>
         </div>
     </section>
@@ -68,19 +67,19 @@
     <!-- Seção de Soluções Adquadas -->
     <section id="solucoes">
         <h2>Soluções Inspiradas em Modelos Globais</h2>
-        <p>O Brasil pode e deve aprender com soluções criativas de outros países [9]:</p>
+        <p>O Brasil pode e deve aprender com soluções criativas de outros países :</p>
         <ul>
-            <li><strong>Reino Unido:</strong> Fortalecer a Atenção Primária como porta de entrada única [10].</li>
-            <li><strong>Tailândia:</strong> Priorizar a eficiência e a prevenção em contextos de orçamento limitado [10].</li>
-            <li><strong>Cuba:</strong> Melhorar a distribuição territorial com foco em médicos generalistas [10].</li>
-            <li><strong>Alemanha:</strong> Integrar melhor os setores público e privado com regulação forte [10].</li>
+            <li><strong>Reino Unido:</strong> Fortalecer a Atenção Primária como porta de entrada única .</li>
+            <li><strong>Tailândia:</strong> Priorizar a eficiência e a prevenção em contextos de orçamento limitado .</li>
+            <li><strong>Cuba:</strong> Melhorar a distribuição territorial com foco em médicos generalistas .</li>
+            <li><strong>Alemanha:</strong> Integrar melhor os setores público e privado com regulação forte .</li>
         </ul>
     </section>
 </main>
 
 <footer>
     <p>&copy; 2024 Projeto Interdisciplinar - Análise Crítica da Saúde</p>
-    <img src="logo-sus.jpg" alt="Logo do SUS" class="img-rodape">
+    <img src="LOGO SUS.PNG.jpeg" alt="Logo do SUS" class="img-rodape">
 </footer>
 
 <script src="script.js"></script>
