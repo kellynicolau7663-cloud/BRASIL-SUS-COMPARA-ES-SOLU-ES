@@ -43,7 +43,7 @@
 <main class="container">
     <section id="introducao" class="card">
         <h2>1. Introdução</h2>
-        <p>O Sistema Único de Saúde (SUS) representa uma das maiores políticas públicas de saúde do mundo, sendo responsible por garantir acesso universal, integral e gratuito aos serviços de saúde para toda a população brasileira. Criado pela Constituição Federal de 1988, o SUS surgiu com o objetivo de assegurar que a saúde fosse reconhecida como um direito de todos e dever do Estado.</p>
+        <p>O Sistema Único de Saúde (SUS) representa uma das maiores políticas públicas de saúde do mundo, sendo responsável por garantir acesso universal, integral e gratuito aos serviços de saúde para toda a população brasileira. Criado pela Constituição Federal de 1988, o SUS surgiu com o objetivo de assegurar que a saúde fosse reconhecida como um direito de todos e dever do Estado.</p>
         <p>O sistema brasileiro de saúde possui características únicas devido à dimensão territorial do país, à diversidade social e às desigualdades econômicas existentes entre as regiões. Mesmo diante de desafios como filas de espera, superlotação hospitalar e dificuldades de financiamento, o SUS desempenha papel fundamental em programas de vacinação, transplantes de órgãos, atendimento de urgência e atenção básica à saúde.</p>
         <p>Este trabalho tem como objetivo analisar o funcionamento do sistema de saúde brasileiro, identificando suas principais características, avanços, desafios e impactos na qualidade de vida da população.</p>
     </section>
@@ -54,7 +54,7 @@
         </div>
         <article id="sus" class="card">
             <h3>2.1 O Sistema Único de Saúde (SUS)</h3>
-            <p>O Sistema Único de Saúde foi criado em 1988 pela Constituição Federal Brasileira. Seu principal objetivo é garantir atendimento gratuito e universal para toda a população.</p>
+            <p>O Sistema Único de Saúde foi criado in 1988 pela Constituição Federal Brasileira. Seu principal objetivo é garantir atendimento gratuito e universal para toda a população.</p>
             <p>O SUS funciona com base em três princípios fundamentais que garantem o acesso à saúde para toda a população brasileira (BRASIL, 1988):</p>
             
             <div class="principles-grid">
@@ -147,7 +147,7 @@
             <h3>2.5 Desafios do SUS</h3>
             <p>Apesar dos avanços conquistados ao longo dos anos, o Sistema Único de Saúde (SUS) ainda enfrenta importantes desafios que dificultam a garantia de um atendimento de qualidade para toda a população. Entre os principais problemas estão as <strong>desigualdades regionais</strong>, já que algumas regiões possuem menor infraestrutura hospitalar e menor quantidade de profissionais de saúde.</p>
             <p>Além disso, o sistema enfrenta longos tempos de espera para consultas, exames e cirurgias, principalmente em serviços especializados. Outro desafio importante é o <strong>financiamento insuficiente</strong>, que limita investimentos em estrutura, equipamentos e ampliação dos serviços de saúde.</p>
-            <p>Problemas relacionados à gestão pública, organization dos serviços e distribuição de recursos também impactam a eficiência do SUS, dificultando o acesso rápido e adequado da população aos atendimentos de saúde (FIOCRUZ, 2026).</p>
+            <p>Problemas relacionados à gestão pública, organização dos serviços e distribuição de recursos também impactam a eficiência do SUS, dificultando o acesso rápido e adequado da população aos atendimentos de saúde (FIOCRUZ, 2026).</p>
         </article>
         <article id="aprendizado" class="card">
             <h3>2.6 O que o Brasil pode aprender com outros países (E vice-versa)</h3>
@@ -183,7 +183,27 @@
 </footer>
 
 <script>
-  // 1. Gráfico de Linha: Expectativa de Vida
+  // Plugin customizado para garantir fundo branco ou transparente controlado na área do canvas
+  const pluginFundoCard = {
+    id: 'customCanvasBackgroundColor',
+    beforeDraw: (chart) => {
+      const {ctx} = chart;
+      ctx.save();
+      ctx.globalCompositeOperation = 'destination-over';
+      ctx.fillStyle = '#ffffff'; // Garante fundo branco suave para legibilidade dos dados
+      ctx.fillRect(0, 0, chart.width, chart.height);
+      ctx.restore();
+    }
+  };
+
+  // Cores institucionais do tema (Formatos Sólido e Transparente)
+  const coresSustentaveis = {
+    verde: { fundo: 'rgba(0, 99, 36, 0.2)', borda: 'rgba(0, 99, 36, 1)' },
+    azul: { fundo: 'rgba(0, 47, 108, 0.4)', borda: 'rgba(0, 47, 108, 1)' },
+    amarelo: { fundo: 'rgba(255, 215, 0, 0.6)', borda: 'rgba(212, 175, 55, 1)' }
+  };
+
+  // 1. Gráfico de Linha: Expectativa de Vida (Verde Institucional)
   new Chart(document.getElementById('chartExpectativaVida'), {
     type: 'line',
     data: {
@@ -191,16 +211,18 @@
       datasets: [{
         label: 'Expectativa de Vida (Anos)',
         data: [43, 54, 62, 70.4, 76.6],
-        borderColor: '#006324',
-        backgroundColor: 'rgba(0, 99, 36, 0.1)',
+        borderColor: coresSustentaveis.verde.borda,
+        backgroundColor: coresSustentaveis.verde.fundo,
         borderWidth: 3,
-        fill: true
+        fill: true,
+        tension: 0.2 // Deixa a linha levemente curvada e moderna
       }]
     },
+    plugins: [pluginFundoCard],
     options: { responsive: true, maintainAspectRatio: false }
   });
 
-  // 2. Gráfico de Barra único: Mortalidade Infantil
+  // 2. Gráfico de Barra único: Mortalidade Infantil (Azul Sofisticado com Transparência)
   new Chart(document.getElementById('chartMortalidadeInfantil'), {
     type: 'bar',
     data: {
@@ -208,22 +230,32 @@
       datasets: [{
         label: 'Mortes por 1.000 nascidos vivos',
         data: [146.6, 47.1, 16.0, 12.3],
-        backgroundColor: '#002f6c'
+        backgroundColor: coresSustentaveis.azul.fundo,
+        borderColor: coresSustentaveis.azul.borda,
+        borderWidth: 1.5
       }]
     },
+    plugins: [pluginFundoCard],
     options: { responsive: true, maintainAspectRatio: false }
   });
 
-  // 3. Gráfico Donut (Pizza): Distribuição de Médicos
+  // 3. Gráfico Donut (Pizza): Distribuição de Médicos (Paleta Brasil Integrada)
   new Chart(document.getElementById('chartMedicosRegiao'), {
     type: 'doughnut',
     data: {
       labels: ['Sudeste (Média)', 'Norte (Média)', 'Média Nacional'],
       datasets: [{
         data: [3.5, 1.3, 2.5],
-        backgroundColor: ['#006324', '#ffdf00', '#002f6c']
+        backgroundColor: [
+          coresSustentaveis.verde.borda,
+          coresSustentaveis.amarelo.fundo,
+          coresSustentaveis.azul.borda
+        ],
+        borderColor: '#ffffff',
+        borderWidth: 2
       }]
     },
+    plugins: [pluginFundoCard],
     options: { responsive: true, maintainAspectRatio: false }
   });
 
@@ -235,9 +267,20 @@
       datasets: [{
         label: '% de participação do PIB',
         data: [4.0, 5.0, 9.0],
-        backgroundColor: ['#006324', '#ffdf00', '#002f6c']
+        backgroundColor: [
+          coresSustentaveis.verde.fundo,
+          coresSustentaveis.amarelo.fundo,
+          coresSustentaveis.azul.fundo
+        ],
+        borderColor: [
+          coresSustentaveis.verde.borda,
+          coresSustentaveis.amarelo.borda,
+          coresSustentaveis.azul.borda
+        ],
+        borderWidth: 1.5
       }]
     },
+    plugins: [pluginFundoCard],
     options: { responsive: true, maintainAspectRatio: false }
   });
 </script>
