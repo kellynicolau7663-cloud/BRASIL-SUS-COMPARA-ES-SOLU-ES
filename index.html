@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Análise interdisciplinar do Sistema Único de Saúde (SUS) do Brasil: princípios, indicadores, avanços, desafios e comparações internacionais.">
+    <title>SUS: O Sistema de Saúde do Brasil | Projeto Interdisciplinar</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+    <!-- Scroll Progress Indicator -->
+    <div id="scroll-progress"></div>
+
+    <!-- Navigation Header -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <i class="fa-solid fa-heart-pulse logo-icon"></i>
+                <span class="logo-text">SUS <span class="accent-text">Brasil</span></span>
+            </a>
+            <button class="mobile-menu-btn" aria-label="Abrir Menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <nav class="nav-menu">
+                <a href="#home" class="nav-link active">Início</a>
+                <a href="#principios" class="nav-link">Princípios</a>
+                <a href="#comparacao" class="nav-link">Público vs Privado</a>
+                <a href="#indicadores" class="nav-link">Indicadores</a>
+                <a href="#avancos" class="nav-link">Avanços</a>
+                <a href="#desafios" class="nav-link">Desafios</a>
+                <a href="#referencias" class="nav-link">Referências</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="hero-bg-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+            </div>
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <span class="hero-badge">Projeto Interdisciplinar &bull; Grupo 1</span>
+                    <h1 class="hero-title">Comparação dos Sistemas de Saúde: <span class="gradient-text">Brasil</span></h1>
+                    <p class="hero-subtitle">Uma análise profunda sobre a estrutura, conquistas, indicadores e os desafios do Sistema Único de Saúde (SUS) diante da realidade socioeconômica brasileira.</p>
+                    <div class="hero-buttons">
+                        <a href="#principios" class="btn btn-primary">Iniciar Exploração <i class="fa-solid fa-arrow-right"></i></a>
+                        <a href="#grupo" class="btn btn-secondary">Membros do Grupo</a>
+                    </div>
+                </div>
+                
+                <!-- Hero Card: Group Members -->
+                <div id="grupo" class="hero-card glass-card">
+                    <div class="card-header">
+                        <i class="fa-solid fa-users-gear icon-header"></i>
+                        <h3>Ficha Técnica</h3>
+                    </div>
+                    <div class="group-info">
+                        <p class="project-tag"><strong>Trabalho Acadêmico</strong></p>
+                        <p class="project-desc">Análise abrangente da saúde pública e privada nacional.</p>
+                        <hr class="card-divider">
+                        <h4>Integrantes do Grupo 1:</h4>
+                        <ul class="member-list">
+                            <li><i class="fa-solid fa-user-graduate member-icon"></i> Kelly Cristina</li>
+                            <li><i class="fa-solid fa-user-graduate member-icon"></i> Deivid Lima</li>
+                            <li><i class="fa-solid fa-user-graduate member-icon"></i> Daniele da Silva</li>
+                            <li><i class="fa-solid fa-user-graduate member-icon"></i> Breno Santos</li>
+                            <li><i class="fa-solid fa-user-graduate member-icon"></i> Jamile</li>
+                            <li><i class="fa-solid fa-user-graduate member-icon"></i> Flavia Fonseca</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Introduction Section -->
+        <section id="introducao" class="section-padding container">
+            <div class="grid-2col align-center">
+                <div class="intro-visual">
+                    <div class="visual-box">
+                        <div class="icon-bubble pulse">
+                            <i class="fa-solid fa-shield-halved"></i>
+                        </div>
+                        <div class="stats-badge">
+                            <span class="stats-num">1988</span>
+                            <span class="stats-label">Constituição Cidadã</span>
+                        </div>
+                        <!-- Decorative element representing community health -->
+                        <div class="visual-circle"></div>
+                    </div>
+                </div>
+                <div class="intro-text-content">
+                    <div class="section-tag">1. Introdução</div>
+                    <h2 class="section-title">O SUS como Direito de Todos</h2>
+                    <p class="lead-text">O Sistema Único de Saúde (SUS) representa uma das maiores políticas públicas de saúde do mundo, sendo responsável por garantir acesso universal, integral e gratuito aos serviços de saúde para toda a população brasileira.</p>
+                    <p>Criado pela Constituição Federal de 1988, o SUS surgiu com o objetivo de assegurar que a saúde fosse reconhecida como um direito de todos e dever do Estado, quebrando o modelo anterior onde apenas trabalhadores com carteira assinada tinham direito a atendimento público.</p>
+                    <div class="info-alert">
+                        <i class="fa-solid fa-circle-info alert-icon"></i>
+                        <p>O sistema brasileiro possui características únicas devido à dimensão territorial do país, à diversidade social e às profundas desigualdades econômicas regionais.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SUS Principles Section -->
+        <section id="principios" class="section-padding bg-light">
+            <div class="container">
+                <div class="text-center max-w-700 margin-auto mb-60">
+                    <div class="section-tag">2.1 Princípios Fundamentais</div>
+                    <h2 class="section-title">Os Pilares de Sustentação do SUS</h2>
+                    <p>O funcionamento do SUS está baseado em três princípios doutrinários que garantem a justiça e a abrangência da atenção à saúde do cidadão.</p>
+                </div>
+                
+                <div class="grid-3col">
+                    <!-- Universalidade Card -->
+                    <div class="principle-card glass-card" data-principle="universalidade">
+                        <div class="card-icon-wrapper color-blue">
+                            <i class="fa-solid fa-globe"></i>
+                        </div>
+                        <h3>Universalidade</h3>
+                        <p class="card-summary">Garante que todas as pessoas tenham direito ao atendimento de saúde, sem qualquer distinção.</p>
+                        <div class="card-detail">
+                            <hr class="card-divider">
+                            <p>Independente de renda, classe social, emprego, nacionalidade ou qualquer outra condição, a saúde é um direito inerente a todo ser humano e deve ser provida pelo Estado.</p>
+                        </div>
+                    </div>
+
+                    <!-- Integralidade Card -->
+                    <div class="principle-card glass-card" data-principle="integralidade">
+                        <div class="card-icon-wrapper color-green">
+                            <i class="fa-solid fa-hand-holding-heart"></i>
+                        </div>
+                        <h3>Integralidade</h3>
+                        <p class="card-summary">Assegura que o cidadão receba atendimento completo em todas as suas necessidades de saúde.</p>
+                        <div class="card-detail">
+                            <hr class="card-divider">
+                            <p>O atendimento deve contemplar ações integradas que vão desde a prevenção de doenças e promoção do bem-estar, até exames, diagnóstico, tratamento complexo e reabilitação física.</p>
+                        </div>
+                    </div>
+
+                    <!-- Equidade Card -->
+                    <div class="principle-card glass-card" data-principle="equidade">
+                        <div class="card-icon-wrapper color-purple">
+                            <i class="fa-solid fa-scale-balanced"></i>
+                        </div>
+                        <h3>Equidade</h3>
+                        <p class="card-summary">Busca diminuir as desigualdades sociais e de saúde distribuindo recursos conforme a necessidade de cada um.</p>
+                        <div class="card-detail">
+                            <hr class="card-divider">
+                            <p>Significa tratar de forma desigual os desiguais para obter igualdade de oportunidades. Populações vulneráveis ou regiões com maiores carências recebem atenção e investimentos prioritários.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="services-list-wrapper mt-50 text-center">
+                    <h4>Serviços Cobertos pelo SUS</h4>
+                    <div class="tag-cloud">
+                        <span class="service-tag"><i class="fa-solid fa-user-doctor"></i> Consultas Médicas</span>
+                        <span class="service-tag"><i class="fa-solid fa-syringe"></i> Vacinação Nacional</span>
+                        <span class="service-tag"><i class="fa-solid fa-hospital"></i> Internação e Cirurgias</span>
+                        <span class="service-tag"><i class="fa-solid fa-heart"></i> Transplantes de Órgãos</span>
+                        <span class="service-tag"><i class="fa-solid fa-pills"></i> Medicamentos Gratuitos</span>
+                        <span class="service-tag"><i class="fa-solid fa-truck-medical"></i> Urgência e Emergência (SAMU)</span>
+                        <span class="service-tag"><i class="fa-solid fa-leaf"></i> Prevenção e Vigilância Sanitária</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Public vs Private Health Section -->
+        <section id="comparacao" class="section-padding container">
+            <div class="text-center max-w-700 margin-auto mb-50">
+                <div class="section-tag">2.2 Saúde Pública e Privada</div>
+                <h2 class="section-title">A Divisão do Sistema de Saúde Brasileiro</h2>
+                <p>O Brasil possui um sistema híbrido de saúde, coexistindo o setor público (SUS) e o setor suplementar privado (Planos de saúde e atendimentos particulares).</p>
+            </div>
+
+            <!-- Interactive Toggle Comparison -->
+            <div class="comparison-tabs">
+                <div class="tab-buttons">
+                    <button class="tab-btn active" data-tab="publico">
+                        <i class="fa-solid fa-users"></i> Setor Público (SUS)
+                    </button>
+                    <button class="tab-btn" data-tab="privado">
+                        <i class="fa-solid fa-wallet"></i> Setor Privado
+                    </button>
+                </div>
+
+                <div class="tab-content-wrapper">
+                    <!-- Public Sector Details -->
+                    <div id="tab-publico" class="tab-content active glass-card">
+                        <div class="comparison-grid">
+                            <div class="comp-col">
+                                <h3 class="comp-title text-green"><i class="fa-regular fa-circle-check"></i> Vantagens & Cobertura</h3>
+                                <ul class="comp-list">
+                                    <li><i class="fa-solid fa-check"></i> <strong>Acesso Gratuito:</strong> Sem qualquer cobrança direta de mensalidade, coparticipação ou tarifas.</li>
+                                    <li><i class="fa-solid fa-check"></i> <strong>Universalidade:</strong> Atende 100% da população brasileira e estrangeiros em solo nacional.</li>
+                                    <li><i class="fa-solid fa-check"></i> <strong>Ações Nacionais:</strong> Campanhas massivas de vacinação, controle de endemias e vigilância epidemiológica e sanitária.</li>
+                                    <li><i class="fa-solid fa-check"></i> <strong>Alta Complexidade:</strong> O SUS financia mais de 90% dos transplantes de órgãos do país e tratamentos oncológicos de alto custo.</li>
+                                </ul>
+                            </div>
+                            <div class="comp-col border-left">
+                                <h3 class="comp-title text-red"><i class="fa-regular fa-circle-xmark"></i> Principais Desafios</h3>
+                                <ul class="comp-list">
+                                    <li><i class="fa-solid fa-triangle-exclamation"></i> <strong>Filas de Espera:</strong> Longo tempo de agendamento para consultas com especialistas e exames complexos.</li>
+                                    <li><i class="fa-solid fa-triangle-exclamation"></i> <strong>Superlotação:</strong> Prontos-socorros e hospitais metropolitanos sob forte pressão de demanda diária.</li>
+                                    <li><i class="fa-solid fa-triangle-exclamation"></i> <strong>Falta de Profissionais:</strong> Escassez de médicos e insumos básicos em regiões remotas e comunidades vulneráveis.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Private Sector Details -->
+                    <div id="tab-privado" class="tab-content glass-card">
+                        <div class="comparison-grid">
+                            <div class="comp-col">
+                                <h3 class="comp-title text-green"><i class="fa-regular fa-circle-check"></i> Vantagens & Diferenciais</h3>
+                                <ul class="comp-list">
+                                    <li><i class="fa-solid fa-check"></i> <strong>Rapidez no Atendimento:</strong> Tempos de espera reduzidos para consultas eletivas e exames de rotina.</li>
+                                    <li><i class="fa-solid fa-check"></i> <strong>Acesso a Especialistas:</strong> Facilidade de agendamento direto com médicos especializados.</li>
+                                    <li><i class="fa-solid fa-check"></i> <strong>Conforto Hospitalar:</strong> Acomodações de melhor qualidade visual e hotelaria em internações privadas.</li>
+                                    <li><i class="fa-solid fa-check"></i> <strong>Tecnologia de Ponta:</strong> Rápida incorporação de procedimentos e aparelhos de última geração.</li>
+                                </ul>
+                            </div>
+                            <div class="comp-col border-left">
+                                <h3 class="comp-title text-red"><i class="fa-regular fa-circle-xmark"></i> Desafios & Limitações</h3>
+                                <ul class="comp-list">
+                                    <li><i class="fa-solid fa-triangle-exclamation"></i> <strong>Custo Elevado:</strong> Mensalidades caras que crescem por faixa etária, pesando no orçamento familiar.</li>
+                                    <li><i class="fa-solid fa-triangle-exclamation"></i> <strong>Exclusão Social:</strong> Acessível a apenas cerca de 25% da população (geralmente via benefícios corporativos).</li>
+                                    <li><i class="fa-solid fa-triangle-exclamation"></i> <strong>Cobertura Restrita:</strong> Planos básicos com restrições e carências contratuais severas.</li>
+                                    <li><i class="fa-solid fa-triangle-exclamation"></i> <strong>Dependência do SUS:</strong> Mesmo usuários de planos recorrem ao SUS em emergências de trânsito, vacinação ou tratamentos de altíssimo custo.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Health Indicators Section (Interactive Charts) -->
+        <section id="indicadores" class="section-padding bg-light">
+            <div class="container">
+                <div class="text-center max-w-700 margin-auto mb-60">
+                    <div class="section-tag">2.3 Indicadores de Saúde</div>
+                    <h2 class="section-title">Visualizando a Saúde em Números</h2>
+                    <p>Os indicadores de saúde são ferramentas cruciais para monitorar a eficácia de políticas públicas, analisar mudanças demográficas e gerenciar recursos de forma equilibrada.</p>
+                </div>
+
+                <div class="dashboard-grid">
+                    <!-- Indicator Card 1 -->
+                    <div class="dashboard-card glass-card">
+                        <div class="indicator-header">
+                            <div>
+                                <span class="indicator-category">Expectativa de Vida</span>
+                                <h3>Recuperação e Crescimento</h3>
+                            </div>
+                            <span class="indicator-badge color-green">+76,6 anos</span>
+                        </div>
+                        <div class="chart-container">
+                            <canvas id="chartExpectativaVida"></canvas>
+                        </div>
+                        <p class="chart-desc">Após os impactos severos da pandemia de Covid-19 na longevidade, o indicador voltou a crescer, atingindo 76,6 anos em 2024, refletindo a eficácia de campanhas de saúde pública.</p>
+                    </div>
+
+                    <!-- Indicator Card 2 -->
+                    <div class="dashboard-card glass-card">
+                        <div class="indicator-header">
+                            <div>
+                                <span class="indicator-category">Mortalidade Infantil</span>
+                                <h3>Queda Histórica Drástica</h3>
+                            </div>
+                            <span class="indicator-badge color-blue">-91,6%</span>
+                        </div>
+                        <div class="chart-container">
+                            <canvas id="chartMortalidadeInfantil"></canvas>
+                        </div>
+                        <p class="chart-desc">A mortalidade infantil caiu de 146,6 por mil nascidos vivos (1940) para 12,3 (2024), impulsionada pela vacinação infantil, saneamento e ampliação das consultas de pré-natal.</p>
+                    </div>
+
+                    <!-- Indicator Card 3 -->
+                    <div class="dashboard-card glass-card">
+                        <div class="indicator-header">
+                            <div>
+                                <span class="indicator-category">Distribuição Médica</span>
+                                <h3>Razão de Médicos por Habitação</h3>
+                            </div>
+                            <span class="indicator-badge color-purple">2,5 méd/1k hab</span>
+                        </div>
+                        <div class="chart-container">
+                            <canvas id="chartMedicosRegiao"></canvas>
+                        </div>
+                        <p class="chart-desc">O Brasil possui 2,5 médicos por mil habitantes, mas com distribuição muito desigual: grande concentração em polos urbanos e capitais em detrimento de regiões interioranas e do Norte/Nordeste.</p>
+                    </div>
+
+                    <!-- Indicator Card 4 -->
+                    <div class="dashboard-card glass-card">
+                        <div class="indicator-header">
+                            <div>
+                                <span class="indicator-category">Financiamento da Saúde</span>
+                                <h3>Investimento no PIB (%)</h3>
+                            </div>
+                            <span class="indicator-badge color-orange">9% do PIB</span>
+                        </div>
+                        <div class="chart-container">
+                            <canvas id="chartPIBSaude"></canvas>
+                        </div>
+                        <p class="chart-desc">Embora o Brasil invista cerca de 9% do seu PIB em saúde, o montante é dividido quase igualmente entre o gasto público (SUS) e o privado, sendo que o SUS atende a ampla maioria da população.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- System Advances Section (Interactive Slides/Carousel) -->
+        <section id="avancos" class="section-padding container">
+            <div class="text-center max-w-700 margin-auto mb-60">
+                <div class="section-tag">2.4 Avanços do Sistema</div>
+                <h2 class="section-title">Conquistas e Referências Internacionais</h2>
+                <p>O SUS desenvolveu programas inovadores de excelência técnica reconhecidos globalmente como pilares essenciais de inclusão social e medicina preventiva.</p>
+            </div>
+
+            <!-- Interactive Carousel / Slide System -->
+            <div class="carousel-container">
+                <div class="carousel-navigation">
+                    <button class="carousel-nav-btn active" data-slide="0">
+                        <i class="fa-solid fa-shield-virus"></i> Programa de Imunizações (PNI)
+                    </button>
+                    <button class="carousel-nav-btn" data-slide="1">
+                        <i class="fa-solid fa-house-chimney-medical"></i> Saúde da Família (ESF)
+                    </button>
+                    <button class="carousel-nav-btn" data-slide="2">
+                        <i class="fa-solid fa-ribbon"></i> Combate ao HIV/AIDS e Infecções
+                    </button>
+                </div>
+
+                <div class="carousel-window glass-card">
+                    <!-- Slide 1 -->
+                    <div class="carousel-slide active">
+                        <div class="slide-grid">
+                            <div class="slide-content">
+                                <span class="slide-tag">PNI - Criado em 1973</span>
+                                <h3>Programa Nacional de Imunizações</h3>
+                                <p>O PNI é uma das maiores conquistas da saúde pública mundial, centralizando e organizando campanhas massivas de vacinação gratuitas contra poliomielite, sarampo, rubéola, tétano e outras dezenas de patologias.</p>
+                                <p>Por meio do SUS, o país distribui milhões de doses anualmente com cobertura em áreas urbanas, rurais e comunidades indígenas remotas, sendo vital para o aumento de nossa expectativa de vida global.</p>
+                                <div class="slide-highlight-box">
+                                    <i class="fa-solid fa-award"></i>
+                                    <span>Reconhecido internacionalmente como o maior programa gratuito de vacinação contínua do mundo.</span>
+                                </div>
+                            </div>
+                            <div class="slide-visual">
+                                <div class="slide-icon-circle color-blue">
+                                    <i class="fa-solid fa-syringe"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 2 -->
+                    <div class="carousel-slide">
+                        <div class="slide-grid">
+                            <div class="slide-content">
+                                <span class="slide-tag">Atenção Primária</span>
+                                <h3>Estratégia Saúde da Família (ESF)</h3>
+                                <p>A ESF funciona como a porta de entrada preferencial do sistema, enviando equipes multidisciplinares (médicos, enfermeiros, técnicos e agentes comunitários de saúde) para realizar visitas nas residências das famílias.</p>
+                                <p>Focado na prevenção ativa e no acompanhamento continuado, o programa melhora as taxas de pré-natal, controla a hipertensão e o diabetes e reduz consideravelmente a necessidade de internações em hospitais.</p>
+                                <div class="slide-highlight-box">
+                                    <i class="fa-solid fa-people-roof"></i>
+                                    <span>Diminui desigualdades no acesso à saúde básica ao focar diretamente no território e na realidade local.</span>
+                                </div>
+                            </div>
+                            <div class="slide-visual">
+                                <div class="slide-icon-circle color-green">
+                                    <i class="fa-solid fa-users-viewfinder"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 3 -->
+                    <div class="carousel-slide">
+                        <div class="slide-grid">
+                            <div class="slide-content">
+                                <span class="slide-tag">Referência Global</span>
+                                <h3>Combate e Tratamento do HIV/AIDS</h3>
+                                <p>O Brasil tornou-se pioneiro no combate ao HIV ao oferecer, desde a década de 1990, tratamento medicamentoso antirretroviral totalmente gratuito aos pacientes diagnosticados através da rede do SUS.</p>
+                                <p>O programa envolve distribuição maciça de preservativos, campanhas ativas de conscientização, testes rápidos capilarizados e a disponibilização de terapias preventivas como a PrEP e a PEP.</p>
+                                <div class="slide-highlight-box">
+                                    <i class="fa-solid fa-hand-holding-heart"></i>
+                                    <span>Garante sobrevida de qualidade equivalente à média da população geral para pacientes em tratamento ativo.</span>
+                                </div>
+                            </div>
+                            <div class="slide-visual">
+                                <div class="slide-icon-circle color-red">
+                                    <i class="fa-solid fa-ribbon"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Challenges & Global Learning -->
+        <section id="desafios" class="section-padding bg-light">
+            <div class="container">
+                <div class="grid-2col align-center">
+                    <div class="desafios-text">
+                        <div class="section-tag">2.5 & 2.6 Desafios do SUS</div>
+                        <h2 class="section-title">O que o Brasil enfrenta e o que ensina ao Mundo</h2>
+                        <p>O subfinanciamento histórico do SUS é apontado como a principal barreira para sua expansão estrutural. Embora seja universal, o sistema recebe menos fundos públicos per capita do que sistemas similares europeus.</p>
+                        
+                        <div class="desafios-list">
+                            <div class="desafio-item">
+                                <div class="desafio-number">01</div>
+                                <div>
+                                    <h4>Desequilíbrio de Infraestrutura</h4>
+                                    <p>Hospitais de alta complexidade e equipamentos tecnológicos estão altamente concentrados nas regiões Sudeste e Sul.</p>
+                                </div>
+                            </div>
+                            <div class="desafio-item">
+                                <div class="desafio-number">02</div>
+                                <div>
+                                    <h4>Demora em Especialidades</h4>
+                                    <p>Os longos tempos de espera para consultas e cirurgias eletivas sobrecarregam os sistemas municipais e estaduais.</p>
+                                </div>
+                            </div>
+                            <div class="desafio-item">
+                                <div class="desafio-number">03</div>
+                                <div>
+                                    <h4>Eficiência de Gestão</h4>
+                                    <p>Descentralização exige alta capacidade administrativa dos municípios, que por vezes carecem de recursos gerenciais e técnicos.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cooperacao-card glass-card">
+                        <div class="cooperacao-header">
+                            <i class="fa-solid fa-earth-americas text-blue header-big-icon"></i>
+                            <h3>A Cooperação e Aprendizado Internacional</h3>
+                        </div>
+                        <p>O SUS inspirou-se amplamente no modelo do **National Health Service (NHS)** do Reino Unido para a consolidação de sua rede integrada universal e gratuita.</p>
+                        <p>Porém, o intercâmbio de práticas é mútuo: reportagens recentes destacam que o próprio **NHS britânico tem estudado a Estratégia Saúde da Família (ESF)** e o modelo brasileiro de agentes comunitários de saúde para tentar melhorar a eficiência de sua atenção primária e reduzir internações de emergência.</p>
+                        <blockquote class="quote-box">
+                            "A troca de experiências demonstra que sistemas de saúde podem evoluir por meio da adaptação de políticas públicas eficientes à realidade de cada nação."
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Conclusion Section -->
+        <section id="conclusao" class="section-padding container">
+            <div class="conclusion-box glass-card text-center max-w-900 margin-auto">
+                <div class="section-tag">3. Conclusão</div>
+                <h2 class="section-title">O Caminho para um Futuro Saudável</h2>
+                <div class="conclusion-content">
+                    <p class="lead-text">O sistema de saúde brasileiro desempenha uma função social essencial que protege e dá dignidade a milhões de pessoas todos os dias.</p>
+                    <p>O sucesso e a consolidação de um sistema público de saúde não dependem apenas da riqueza financeira bruta de um país, mas sim da forma estruturada como os recursos fiscais são organizados, administrados e distribuídos para atender equitativamente às reais demandas da população.</p>
+                    <p>Enquanto o SUS continuar a se adaptar e a aperfeiçoar seus mecanismos de financiamento, atenção primária e gestão regionalizada, o Brasil se manterá como uma referência de que a saúde de qualidade pode e deve ser universal.</p>
+                </div>
+                <hr class="card-divider mt-40 mb-30">
+                <div class="conclusion-footer">
+                    <p class="thanks-text">Agradecemos pela leitura e atenção ao nosso estudo.</p>
+                    <div class="footer-badge">Grupo 1 &bull; Projeto Interdisciplinar</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- References Section (Expandable Accordion) -->
+        <section id="referencias" class="section-padding bg-light">
+            <div class="container max-w-800">
+                <div class="text-center mb-40">
+                    <div class="section-tag">4. Referências</div>
+                    <h2 class="section-title">Referências Bibliográficas</h2>
+                    <p>Fontes acadêmicas, constitucionais e governamentais utilizadas na pesquisa deste trabalho.</p>
+                </div>
+
+                <div class="accordion">
+                    <!-- Accordion Item 1 -->
+                    <div class="accordion-item">
+                        <button class="accordion-header">
+                            <span><i class="fa-solid fa-gavel"></i> BRASIL. Constituição Federal (1988)</span>
+                            <i class="fa-solid fa-chevron-down accordion-arrow"></i>
+                        </button>
+                        <div class="accordion-content">
+                            <p>Constituição da República Federativa do Brasil de 1988. Brasília, DF: Senado Federal, 1988. Regulamentação legal que estabeleceu a saúde pública gratuita como direito constitucional universal.</p>
+                            <a href="http://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm" target="_blank" class="ref-link-btn"><i class="fa-solid fa-arrow-up-right-from-square"></i> Ver no Planalto</a>
+                        </div>
+                    </div>
+
+                    <!-- Accordion Item 2 -->
+                    <div class="accordion-item">
+                        <button class="accordion-header">
+                            <span><i class="fa-solid fa-book-open"></i> PAIM, Jairnilson et al. (The Lancet, 2011)</span>
+                            <i class="fa-solid fa-chevron-down accordion-arrow"></i>
+                        </button>
+                        <div class="accordion-content">
+                            <p>O sistema de saúde brasileiro: história, avanços e desafios. The Lancet, Londres, v. 377, n. 9779, p. 1778-1797, 2011. Estudo completo de revisão sobre a evolução do SUS.</p>
+                            <a href="https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(11)60054-8/fulltext" target="_blank" class="ref-link-btn"><i class="fa-solid fa-arrow-up-right-from-square"></i> Ver Artigo Acadêmico</a>
+                        </div>
+                    </div>
+
+                    <!-- Accordion Item 3 -->
+                    <div class="accordion-item">
+                        <button class="accordion-header">
+                            <span><i class="fa-solid fa-file-invoice-dollar"></i> PESSOTO, Umberto C. et al. (2007)</span>
+                            <i class="fa-solid fa-chevron-down accordion-arrow"></i>
+                        </button>
+                        <div class="accordion-content">
+                            <p>Desigualdades no acesso e utilização dos serviços de saúde na Região Metropolitana de São Paulo. Ciência & Saúde Coletiva, Rio de Janeiro, v. 12, n. 2, p. 351-362, 2007. Análise da disparidade de atendimento entre classes e regiões.</p>
+                            <a href="https://www.scielo.br/j/csc/a/Cghw3Ym8d6V4qMhVv6L5GvL/?lang=pt" target="_blank" class="ref-link-btn"><i class="fa-solid fa-arrow-up-right-from-square"></i> Ver no SciELO</a>
+                        </div>
+                    </div>
+
+                    <!-- Accordion Item 4 -->
+                    <div class="accordion-item">
+                        <button class="accordion-header">
+                            <span><i class="fa-solid fa-circle-nodes"></i> Fontes Oficiais de Indicadores</span>
+                            <i class="fa-solid fa-chevron-down accordion-arrow"></i>
+                        </button>
+                        <div class="accordion-content">
+                            <ul class="ref-sublist">
+                               <li><strong>DATASUS (2024-2025):</strong> Dados epidemiológicos e estatísticos de expectativa de vida e morbidade nacional.</li>
+                               <li><strong>IBGE (2025):</strong> Estudos e pesquisas sociodemográficas sobre as condições de saneamento e mortalidade.</li>
+                               <li><strong>FIOCRUZ (2026):</strong> Relatório analítico sobre as desigualdades regionais e o financiamento do SUS.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <div class="logo-flex">
+                    <i class="fa-solid fa-heart-pulse"></i>
+                    <h3>SUS Brasil</h3>
+                </div>
+                <p>Análise de sistemas de saúde. Trabalho interdisciplinar universitário focado na história e estruturação dos sistemas de atenção médica.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Navegação</h4>
+                <ul>
+                    <li><a href="#home">Início</a></li>
+                    <li><a href="#principios">Princípios</a></li>
+                    <li><a href="#comparacao">Público vs Privado</a></li>
+                    <li><a href="#indicadores">Indicadores</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Contato & Apoio</h4>
+                <ul>
+                    <li><a href="#grupo">Membros do Grupo</a></li>
+                    <li><a href="#referencias">Referências</a></li>
+                    <li><a href="https://www.gov.br/saude" target="_blank">Ministério da Saúde</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom text-center">
+            <p>&copy; 2026 - Desenvolvido para o Projeto Interdisciplinar (Grupo 1). Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- JS Script -->
+    <script src="script.js"></script>
+</body>
+</html>
